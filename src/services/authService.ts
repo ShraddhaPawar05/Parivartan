@@ -161,8 +161,23 @@ export const authService = {
       }
 
       return { user, partner: partnerDoc.data() as Partner };
-    } catch (error) {
-      throw error;
+    } catch (error: any) {
+      console.error('Google sign in error code:', error.code);
+      
+      // Provide user-friendly error messages without exposing technical details
+      if (error.code === 'auth/popup-blocked') {
+        throw new Error('Google sign-in popup was blocked. Please allow popups and try again.');
+      } else if (error.code === 'auth/popup-closed-by-user') {
+        throw new Error('Google sign-in was cancelled. Please try again.');
+      } else if (error.code === 'auth/network-request-failed') {
+        throw new Error('Network error. Please check your internet connection and try again.');
+      } else if (error.code === 'auth/operation-not-allowed') {
+        throw new Error('Google sign-in is not enabled. Please contact support.');
+      } else if (error.code === 'auth/too-many-requests') {
+        throw new Error('Too many sign-in attempts. Please try again later.');
+      }
+      
+      throw new Error('Google sign-in failed. Please try again or use email/password login.');
     }
   },
 
