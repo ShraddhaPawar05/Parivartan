@@ -4,10 +4,13 @@ import { useAuth } from '../hooks/useAuth';
 import { dbService } from '../services/dbService';
 import { fcmService } from '../services/fcmService';
 import ChatBot from '../components/ChatBot';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../components/LanguageSelector';
 
 const PartnerDashboard: React.FC = () => {
   const location = useLocation();
   const { user, partner, loading } = useAuth();
+  const { t } = useTranslation();
   const [loadTimeout, setLoadTimeout] = React.useState(false);
   const [unreadCount, setUnreadCount] = useState(0);
   const prevUnreadRef = useRef(0);
@@ -71,13 +74,13 @@ const PartnerDashboard: React.FC = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Loading Issue</h1>
-          <p className="text-gray-600 mb-4">Unable to load partner data. Please try again.</p>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">{t('dashboard.loadingIssue')}</h1>
+          <p className="text-gray-600 mb-4">{t('dashboard.loadingIssueDesc')}</p>
           <button
             onClick={() => window.location.reload()}
             className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700"
           >
-            Refresh Page
+            {t('dashboard.refreshPage')}
           </button>
         </div>
       </div>
@@ -89,7 +92,7 @@ const PartnerDashboard: React.FC = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading your account...</p>
+          <p className="mt-4 text-gray-600">{t('dashboard.loadingAccount')}</p>
         </div>
       </div>
     );
@@ -107,13 +110,13 @@ const PartnerDashboard: React.FC = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Access Denied</h1>
-          <p className="text-gray-600 mb-4">Your account status: {currentPartner?.verificationStatus}</p>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">{t('dashboard.accessDenied')}</h1>
+          <p className="text-gray-600 mb-4">{t('dashboard.accountStatus', { status: currentPartner?.verificationStatus })}</p>
           <Link
             to="/verification-pending"
             className="text-green-600 hover:text-green-700"
           >
-            Check verification status
+            {t('dashboard.checkVerification')}
           </Link>
         </div>
       </div>
@@ -127,13 +130,13 @@ const PartnerDashboard: React.FC = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Partner Data Not Found</h1>
-          <p className="text-gray-600 mb-4">Unable to load partner information.</p>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">{t('dashboard.partnerNotFound')}</h1>
+          <p className="text-gray-600 mb-4">{t('dashboard.partnerNotFoundDesc')}</p>
           <button
             onClick={() => window.location.href = '/signin'}
             className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700"
           >
-            Back to Login
+            {t('dashboard.backToLogin')}
           </button>
         </div>
       </div>
@@ -143,13 +146,13 @@ const PartnerDashboard: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navigation = [
-    { name: 'Dashboard', href: '/dashboard', icon: '🏠' },
-    { name: 'Waste Requests', href: '/dashboard/requests', icon: '📦' },
-    { name: 'Location & Routes', href: '/dashboard/location-routes', icon: '📍' },
-    { name: 'Pickup History', href: '/dashboard/history', icon: '📋' },
-    { name: 'Impact & Analytics', href: '/dashboard/analytics', icon: '📊' },
-    { name: 'Notifications', href: '/dashboard/notifications', icon: '🔔' },
-    { name: 'Profile', href: '/dashboard/profile', icon: '👤' },
+    { name: t('sidebar.dashboard'), href: '/dashboard', icon: '🏠' },
+    { name: t('sidebar.wasteRequests'), href: '/dashboard/requests', icon: '📦' },
+    { name: t('sidebar.locationRoutes'), href: '/dashboard/location-routes', icon: '📍' },
+    { name: t('sidebar.pickupHistory'), href: '/dashboard/history', icon: '📋' },
+    { name: t('sidebar.impactAnalytics'), href: '/dashboard/analytics', icon: '📊' },
+    { name: t('sidebar.notifications'), href: '/dashboard/notifications', icon: '🔔' },
+    { name: t('sidebar.profile'), href: '/dashboard/profile', icon: '👤' },
   ];
 
   return (
@@ -166,7 +169,10 @@ const PartnerDashboard: React.FC = () => {
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between h-16 bg-gradient-to-r from-emerald-600 to-blue-600 shadow-lg px-4">
             <h1 className="text-2xl font-bold text-white">Parivartan</h1>
-            <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-white text-2xl">×</button>
+            <div className="flex items-center gap-2">
+              <LanguageSelector />
+              <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-white text-2xl">×</button>
+            </div>
           </div>
           <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
             {navigation.map((item) => (

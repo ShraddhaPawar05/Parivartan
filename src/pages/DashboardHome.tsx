@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AIWasteAdvisor from '../components/AIWasteAdvisor';
+import { useTranslation } from 'react-i18next';
 
 interface Analysis {
   totalRequests: number;
@@ -14,6 +15,7 @@ interface Analysis {
 
 const DashboardHome: React.FC = () => {
   const { partner } = useAuth();
+  const { t } = useTranslation();
   useEffect(() => { AOS.init({ duration: 600, once: true }); }, []);
   const { requests, streamActive: pathwayStreamActive, updateCount: pathwayUpdateCount } = useWasteRequests();
   const { metrics } = useImpactMetrics();
@@ -43,7 +45,7 @@ const DashboardHome: React.FC = () => {
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading dashboard...</p>
+          <p className="mt-4 text-gray-600">{t('dashboard.loading')}</p>
         </div>
       </div>
     );
@@ -54,13 +56,13 @@ const DashboardHome: React.FC = () => {
       <div className="bg-gradient-to-r from-emerald-600 via-blue-600 to-indigo-600 rounded-2xl p-8 text-white shadow-2xl">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Welcome back, {partner?.name || 'Partner'}!</h1>
-            <p className="text-emerald-100 text-lg">Here's your overview for today.</p>
+            <h1 className="text-3xl font-bold mb-2">{t('dashboard.welcomeBack', { name: partner?.name || 'Partner' })}</h1>
+            <p className="text-emerald-100 text-lg">{t('dashboard.todayOverview')}</p>
           </div>
           {pathwayStreamActive && (
             <div className="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-lg">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <span className="text-sm">Pathway Live • {pathwayUpdateCount}</span>
+              <span className="text-sm">{t('dashboard.pathwayLive')} • {pathwayUpdateCount}</span>
             </div>
           )}
         </div>
@@ -76,7 +78,7 @@ const DashboardHome: React.FC = () => {
               </svg>
             </div>
             <div className="ml-4 min-w-0 flex-1">
-              <p className="text-sm font-semibold text-gray-600 truncate">Active Requests</p>
+              <p className="text-sm font-semibold text-gray-600 truncate">{t('dashboard.activeRequests')}</p>
               <p className="text-3xl font-bold text-gray-900">{activeRequests.length}</p>
             </div>
           </div>
@@ -90,7 +92,7 @@ const DashboardHome: React.FC = () => {
               </svg>
             </div>
             <div className="ml-4 min-w-0 flex-1">
-              <p className="text-sm font-semibold text-gray-600 truncate">Completed</p>
+              <p className="text-sm font-semibold text-gray-600 truncate">{t('dashboard.completed')}</p>
               <p className="text-3xl font-bold text-gray-900">{completedRequests.length}</p>
             </div>
           </div>
@@ -104,7 +106,7 @@ const DashboardHome: React.FC = () => {
               </svg>
             </div>
             <div className="ml-4 min-w-0 flex-1">
-              <p className="text-sm font-semibold text-gray-600 truncate">Waste Processed</p>
+              <p className="text-sm font-semibold text-gray-600 truncate">{t('dashboard.wasteProcessed')}</p>
               <p className="text-2xl font-bold text-gray-900">{metrics.wasteProcessed}<span className="text-lg">kg</span></p>
             </div>
           </div>
@@ -117,11 +119,11 @@ const DashboardHome: React.FC = () => {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900 flex items-center">
               <span className="text-2xl mr-2">🤖</span>
-              AI Insights - Powered by Pathway
+              {t('dashboard.aiInsights')}
             </h2>
             <div className="flex items-center space-x-2 bg-yellow-100 px-3 py-1 rounded-full">
               <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-              <span className="text-xs text-yellow-700 font-medium">Initializing...</span>
+              <span className="text-xs text-yellow-700 font-medium">{t('dashboard.initializing')}</span>
             </div>
           </div>
           <div className="animate-pulse space-y-4">
@@ -135,18 +137,18 @@ const DashboardHome: React.FC = () => {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900 flex items-center">
               <span className="text-2xl mr-2">🤖</span>
-              AI Insights - Powered by Pathway
+              {t('dashboard.aiInsights')}
             </h2>
             <div className="flex items-center space-x-2 bg-green-100 px-3 py-1 rounded-full">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-xs text-green-700 font-medium">Live Stream Active</span>
+              <span className="text-xs text-green-700 font-medium">{t('dashboard.liveStreamActive')}</span>
             </div>
           </div>
 
           {/* Performance Metrics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             <div className="bg-white rounded-lg p-4 border border-purple-100">
-              <div className="text-sm text-gray-600">Success Rate</div>
+              <div className="text-sm text-gray-600">{t('dashboard.successRate')}</div>
               <div className="text-2xl font-bold text-purple-600">
                 {(analysis as Analysis)?.totalRequests > 0 
                   ? Math.round((requests.filter(r => r.status === 'Completed').length / (analysis as Analysis).totalRequests) * 100)
@@ -154,11 +156,11 @@ const DashboardHome: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-purple-100">
-              <div className="text-sm text-gray-600">Top Waste Type</div>
+              <div className="text-sm text-gray-600">{t('dashboard.topWasteType')}</div>
               <div className="text-lg font-bold text-purple-600">{(analysis as Analysis)?.topWasteType || 'N/A'}</div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-purple-100">
-              <div className="text-sm text-gray-600">Most Active Area</div>
+              <div className="text-sm text-gray-600">{t('dashboard.mostActiveArea')}</div>
               <div className="text-lg font-bold text-purple-600">{(analysis as Analysis)?.topArea || 'N/A'}</div>
             </div>
           </div>
@@ -168,7 +170,7 @@ const DashboardHome: React.FC = () => {
             <div className="bg-white rounded-lg p-4 border border-purple-100">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center">
                 <span className="mr-2">💡</span>
-                AI Recommendations for You
+                {t('dashboard.aiRecommendations')}
               </h3>
               <div className="space-y-2">
                 {(analysis as Analysis).recommendations.slice(0, 3).map((rec: string, index: number) => (
@@ -182,7 +184,7 @@ const DashboardHome: React.FC = () => {
           )}
 
           <div className="text-xs text-gray-500 mt-3">
-            Updates: {pathwayUpdateCount} | Real-time streaming analytics
+            {t('dashboard.updates')}: {pathwayUpdateCount} | Real-time streaming analytics
           </div>
         </div>
       )}
@@ -193,7 +195,7 @@ const DashboardHome: React.FC = () => {
       {/* Recent Activity */}
       <div className="bg-white shadow-2xl rounded-2xl border border-gray-100 overflow-hidden">
         <div className="px-6 py-5 border-b border-gray-200 bg-gradient-to-r from-gray-50 to-blue-50">
-          <h2 className="text-xl font-bold text-gray-900">Recent Activity</h2>
+          <h2 className="text-xl font-bold text-gray-900">{t('dashboard.recentActivity')}</h2>
         </div>
         <div className="p-6">
           <div className="space-y-6">
@@ -246,11 +248,11 @@ const DashboardHome: React.FC = () => {
 
                       <div className="grid grid-cols-2 gap-4 mt-3">
                         <div className="bg-white/70 rounded-lg p-3">
-                          <p className="text-xs text-gray-500 uppercase tracking-wide">Quantity</p>
+                          <p className="text-xs text-gray-500 uppercase tracking-wide">{t('dashboard.quantity')}</p>
                           <p className="text-lg font-semibold text-gray-900">{request.quantity}</p>
                         </div>
                         <div className="bg-white/70 rounded-lg p-3">
-                          <p className="text-xs text-gray-500 uppercase tracking-wide">Date</p>
+                          <p className="text-xs text-gray-500 uppercase tracking-wide">{t('dashboard.date')}</p>
                           <p className="text-sm font-semibold text-gray-900">
                             {new Date(request.date).toLocaleDateString('en-IN', {
                               day: 'numeric',

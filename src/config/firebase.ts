@@ -62,3 +62,4 @@ export const messaging = getMessaging(app);
 export { analytics, getToken, onMessage };
 
 export default app;
+

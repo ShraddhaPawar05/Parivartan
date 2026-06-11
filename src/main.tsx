@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import ErrorBoundary from './components/ErrorBoundary.tsx'
 import { ToastProvider } from './components/Toast.tsx'
+import './i18n'
 import './index.css'
 
 if (import.meta.env.PROD) {

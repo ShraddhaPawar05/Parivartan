@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../components/LanguageSelector';
 
 const PartnerSignUpPage: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -22,6 +24,7 @@ const PartnerSignUpPage: React.FC = () => {
   const [_loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { signUp } = useAuth();
+  const { t } = useTranslation();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -60,19 +63,19 @@ const PartnerSignUpPage: React.FC = () => {
     const newErrors: {[key: string]: string} = {};
 
     if (step === 1) {
-      if (!formData.name.trim()) newErrors.name = 'Full name is required';
-      if (!formData.email.trim()) newErrors.email = 'Email is required';
-      else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid';
-      if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
-      if (!formData.password) newErrors.password = 'Password is required';
-      else if (formData.password.length < 8) newErrors.password = 'Password must be at least 8 characters';
-      if (!formData.confirmPassword) newErrors.confirmPassword = 'Please confirm your password';
-      else if (formData.password !== formData.confirmPassword) newErrors.confirmPassword = 'Passwords do not match';
+      if (!formData.name.trim()) newErrors.name = t('signUp.errors.nameRequired');
+      if (!formData.email.trim()) newErrors.email = t('signUp.errors.emailRequired');
+      else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = t('signUp.errors.emailInvalid');
+      if (!formData.phone.trim()) newErrors.phone = t('signUp.errors.phoneRequired');
+      if (!formData.password) newErrors.password = t('signUp.errors.passwordRequired');
+      else if (formData.password.length < 8) newErrors.password = t('signUp.errors.passwordMinLength');
+      if (!formData.confirmPassword) newErrors.confirmPassword = t('signUp.errors.confirmPasswordRequired');
+      else if (formData.password !== formData.confirmPassword) newErrors.confirmPassword = t('signUp.errors.passwordsMismatch');
     } else if (step === 2) {
-      if (!formData.organization.trim()) newErrors.organization = 'Organization name is required';
-      if (!formData.partnerType) newErrors.partnerType = 'Partner type is required';
-      if (formData.partnerType && formData.supportedWasteTypes.length === 0) newErrors.supportedWasteTypes = 'Please select at least one waste type';
-      if (!formData.address.trim()) newErrors.address = 'Address is required';
+      if (!formData.organization.trim()) newErrors.organization = t('signUp.errors.orgRequired');
+      if (!formData.partnerType) newErrors.partnerType = t('signUp.errors.partnerTypeRequired');
+      if (formData.partnerType && formData.supportedWasteTypes.length === 0) newErrors.supportedWasteTypes = t('signUp.errors.wasteTypesRequired');
+      if (!formData.address.trim()) newErrors.address = t('signUp.errors.addressRequired');
     }
 
     setErrors(newErrors);
@@ -123,22 +126,22 @@ const PartnerSignUpPage: React.FC = () => {
       if (err.code) {
         switch (err.code) {
           case 'auth/email-already-in-use':
-            errorMessage = 'This email is already registered. Please use a different email.';
+            errorMessage = t('signUp.errors.emailAlreadyInUse');
             break;
           case 'auth/invalid-email':
-            errorMessage = 'Please enter a valid email address.';
+            errorMessage = t('signUp.errors.invalidEmail');
             break;
           case 'auth/weak-password':
-            errorMessage = 'Password should be at least 6 characters long.';
+            errorMessage = t('signUp.errors.weakPassword');
             break;
           case 'auth/network-request-failed':
-            errorMessage = 'Network error. Please check your internet connection.';
+            errorMessage = t('signUp.errors.networkError');
             break;
           case 'auth/too-many-requests':
-            errorMessage = 'Too many requests. Please try again later.';
+            errorMessage = t('signUp.errors.tooManyRequests');
             break;
           default:
-            errorMessage = err.message || 'Failed to create account';
+            errorMessage = err.message || t('signUp.errors.failedToCreate');
         }
       }
       
@@ -149,9 +152,9 @@ const PartnerSignUpPage: React.FC = () => {
   };
 
   const steps = [
-    { number: 1, title: 'Basic Information', description: 'Personal details and account setup' },
-    { number: 2, title: 'Organizational Information', description: 'Organization and location details' },
-    { number: 3, title: 'Document Upload', description: 'Upload verification documents' },
+    { number: 1, title: t('signUp.step1Title'), description: t('signUp.step1Desc') },
+    { number: 2, title: t('signUp.step2Title'), description: t('signUp.step2Desc') },
+    { number: 3, title: t('signUp.step3Title'), description: t('signUp.step3Desc') },
   ];
 
   return (
@@ -160,11 +163,14 @@ const PartnerSignUpPage: React.FC = () => {
         <Link to="/" className="flex justify-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">Parivartan</h1>
         </Link>
+        <div className="flex justify-end">
+          <LanguageSelector />
+        </div>
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Become a Partner
+          {t('signUp.title')}
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Join our network of waste management partners
+          {t('signUp.subtitle')}
         </p>
       </div>
 
@@ -208,7 +214,7 @@ const PartnerSignUpPage: React.FC = () => {
               <>
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Full Name
+                    {t('signUp.fullName')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -228,7 +234,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address
+                    {t('signUp.emailAddress')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -248,7 +254,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Phone Number
+                    {t('signUp.phoneNumber')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -268,7 +274,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="password" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Password
+                    {t('signUp.password')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -288,7 +294,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="confirmPassword" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Confirm Password
+                    {t('signUp.confirmPassword')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -313,7 +319,7 @@ const PartnerSignUpPage: React.FC = () => {
               <>
                 <div>
                   <label htmlFor="organization" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Organization Name
+                    {t('signUp.orgName')}
                   </label>
                   <div className="mt-1">
                     <input
@@ -333,7 +339,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="partnerType" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Partner Type
+                    {t('signUp.partnerType')}
                   </label>
                   <div className="mt-1">
                     <select
@@ -346,7 +352,7 @@ const PartnerSignUpPage: React.FC = () => {
                         errors.partnerType ? 'border-red-300' : 'border-gray-300'
                       }`}
                     >
-                      <option value="">Select Partner Type</option>
+                      <option value="">{t('signUp.selectPartnerType')}</option>
                       <option value="NGO">🏢 NGO</option>
                       <option value="Municipal">🏛️ Municipal</option>
                       <option value="Startup">🚀 Startup</option>
@@ -361,7 +367,7 @@ const PartnerSignUpPage: React.FC = () => {
                 {formData.partnerType && (
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      What type of waste can you handle? *
+                      {t('signUp.wasteTypesLabel')}
                     </label>
                     <div className="mt-1 grid grid-cols-2 gap-3">
                       {['Plastic', 'Metal', 'Cloth / Textile', 'Paper', 'Cardboard', 'Glass'].map((wasteType) => (
@@ -382,7 +388,7 @@ const PartnerSignUpPage: React.FC = () => {
 
                 <div>
                   <label htmlFor="address" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Address
+                    {t('signUp.address')}
                   </label>
                   <div className="mt-1">
                     <textarea
@@ -410,15 +416,11 @@ const PartnerSignUpPage: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Account Created Successfully!</h3>
-                <p className="text-gray-600 mb-6">
-                  Your account has been created. Now upload your verification documents for admin approval.
-                </p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('signUp.successTitle')}</h3>
+                <p className="text-gray-600 mb-6">{t('signUp.successDesc')}</p>
                 <div className="bg-emerald-50 rounded-lg p-4 text-center">
-                  <h4 className="font-semibold text-emerald-900 mb-2">📋 Next Steps</h4>
-                  <p className="text-sm text-emerald-700">
-                    Upload required documents → Wait for admin approval → Choose subscription plan → Access dashboard
-                  </p>
+                  <h4 className="font-semibold text-emerald-900 mb-2">📋 {t('signUp.nextSteps')}</h4>
+                  <p className="text-sm text-emerald-700">{t('signUp.nextStepsDesc')}</p>
                 </div>
               </div>
             )}
@@ -431,7 +433,7 @@ const PartnerSignUpPage: React.FC = () => {
                   onClick={prevStep}
                   className="flex-1 flex justify-center py-3 px-4 border border-gray-300 rounded-xl shadow-sm bg-white text-sm font-semibold text-gray-700 hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                 >
-                  Previous
+                  {t('signUp.previous')}
                 </button>
               )}
 
@@ -441,7 +443,7 @@ const PartnerSignUpPage: React.FC = () => {
                   onClick={nextStep}
                   className="flex-1 flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-lg text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                 >
-                  Next
+                  {t('signUp.next')}
                 </button>
               ) : currentStep === 2 ? (
                 <button
@@ -449,7 +451,7 @@ const PartnerSignUpPage: React.FC = () => {
                   disabled={_loading}
                   className="flex-1 flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-lg text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 disabled:opacity-50"
                 >
-                  {_loading ? 'Creating Account...' : 'Create Account'}
+                  {_loading ? t('signUp.creatingAccount') : t('signUp.createAccount')}
                 </button>
               ) : (
                 <button
@@ -457,7 +459,7 @@ const PartnerSignUpPage: React.FC = () => {
                   onClick={() => navigate('/document-upload')}
                   className="flex-1 flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-lg text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                 >
-                  Upload Documents
+                  {t('signUp.uploadDocuments')}
                 </button>
               )}
             </div>
@@ -469,7 +471,7 @@ const PartnerSignUpPage: React.FC = () => {
                 <div className="w-full border-t border-gray-300" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">Already have an account?</span>
+                <span className="px-2 bg-white text-gray-500">{t('signUp.alreadyHaveAccount')}</span>
               </div>
             </div>
 
@@ -478,7 +480,7 @@ const PartnerSignUpPage: React.FC = () => {
                 to="/dashboard"
                 className="w-full flex justify-center py-3 px-4 border-2 border-gray-300 rounded-xl shadow-sm bg-white text-sm font-semibold text-gray-500 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50 transform hover:scale-105 transition-all duration-300"
               >
-                Sign In
+                {t('nav.signIn')}
               </Link>
             </div>
           </div>
