@@ -6,6 +6,7 @@ import { db } from '../config/firebase';
 import { useWasteRequests } from '../hooks/useData';
 import { useToast } from '../components/Toast';
 import { PartnerDocument } from '../types';
+import LanguageSelector from '../components/LanguageSelector';
 
 const PartnerProfilePage: React.FC = () => {
   const { partner, user, loading, signOut } = useAuth();
@@ -372,6 +373,22 @@ const PartnerProfilePage: React.FC = () => {
           <h2 className="text-xl font-bold text-gray-900">Account Settings</h2>
         </div>
         <div className="p-6 space-y-6">
+          {/* Language Selector */}
+          <div className="flex items-center justify-between p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-100">
+            <div className="flex items-center">
+              <div className="p-2 bg-purple-100 rounded-lg mr-4">
+                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-bold text-gray-900">Language</p>
+                <p className="text-sm text-gray-600">Choose your preferred language</p>
+              </div>
+            </div>
+            <LanguageSelector />
+          </div>
+
           {/* Theme Toggle */}
           <div className="flex items-center justify-between p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-100">
             <div className="flex items-center">

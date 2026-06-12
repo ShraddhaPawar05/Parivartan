@@ -35,7 +35,7 @@ const PartnerDashboard: React.FC = () => {
     const unsubscribeFCM = fcmService.onForegroundMessage((payload) => {
       new Audio('https://assets.mixkit.co/active_storage/sfx/2354/2354-preview.mp3').play().catch(() => {});
       if (payload.notification) {
-        new Notification(payload.notification.title || 'Parivartan', {
+        new Notification(payload.notification.title || '    Parivartan  ', {
           body: payload.notification.body,
           icon: '/assets/icon.png'
         });
@@ -167,12 +167,9 @@ const PartnerDashboard: React.FC = () => {
       <div className={`fixed inset-y-0 left-0 w-64 bg-white/95 backdrop-blur-sm shadow-2xl border-r border-gray-200 z-30 transform transition-transform duration-300
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className="flex flex-col h-full">
-          <div className="flex items-center justify-between h-16 bg-gradient-to-r from-emerald-600 to-blue-600 shadow-lg px-4">
+          <div className="flex items-center justify-center h-16 bg-gradient-to-r from-emerald-600 to-blue-600 shadow-lg px-4 relative">
             <h1 className="text-2xl font-bold text-white">Parivartan</h1>
-            <div className="flex items-center gap-2">
-              <LanguageSelector />
-              <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-white text-2xl">×</button>
-            </div>
+            <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-white text-2xl absolute right-4">×</button>
           </div>
           <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
             {navigation.map((item) => (
@@ -213,9 +210,9 @@ const PartnerDashboard: React.FC = () => {
       {/* Main content */}
       <div className="lg:ml-64 min-h-screen">
         {/* Mobile top bar */}
-        <div className="lg:hidden sticky top-0 z-10 bg-white shadow-md px-4 py-3 flex items-center justify-between">
+        <div className="lg:hidden sticky top-0 z-10 bg-white shadow-md px-4 py-3 flex items-center justify-between relative">
           <button onClick={() => setSidebarOpen(true)} className="text-gray-600 text-2xl">☰</button>
-          <h1 className="text-lg font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">Parivartan</h1>
+          <h1 className="text-lg font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent absolute left-1/2 -translate-x-1/2">Parivartan</h1>
           <Link to="/dashboard/notifications" className="relative">
             <span className="text-xl">🔔</span>
             {unreadCount > 0 && (
