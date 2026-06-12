@@ -215,7 +215,7 @@ const PickupHistoryPage: React.FC = () => {
             ) : (
               <div className="space-y-4 max-h-[600px] overflow-y-auto">
                 {completedPickups.map((pickup) => {
-                  const imageUrl = pickup.image || '';
+                  const imageUrl = pickup.image || (pickup as any).imageUrl || '';
                   return (
                     <div key={pickup.id} className="border rounded-lg p-4 bg-blue-50">
                       <div className="flex items-start space-x-4">
