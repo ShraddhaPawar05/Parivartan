@@ -439,10 +439,6 @@ Graphical representation of survey results, user ratings, and community acceptan
 
 # 🛠️ Technology Stack
 
-<p align="center">
-<img src="./assets/techstack/tech-stack.png" width="100%">
-</p>
-
 ## Technology Overview
 
 <table>
