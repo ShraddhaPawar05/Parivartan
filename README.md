@@ -633,23 +633,42 @@ Recognized and selected across 10+ hackathons and innovation programs for its su
 
 </p>
 
-### Project Demo Video
+# 🎥 Project Demonstration
 
-Watch the complete demonstration of Parivartan, showcasing AI-powered waste identification, recycler connectivity, scheduled collections, rewards system, community engagement, and admin monitoring.
+<table align="center">
+<tr>
 
----
+<td align="center" width="50%">
 
-# 📲 Download APK
+<a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUp">
 
-<p align="center">
-
-<a href="https://drive.google.com/file/d/1F03Q57cgDnVkNFtkjxh26T5YhQ7srzp/view?usp=sharing](https://drive.google.com/file/d/1F03Q57cg-DnVkNFtkjxh26T5YhQ7srzp/view?usp=sharing">
-
-<img src="./assets/buttons/pari_app.jpeg" width="250">
+<img src="./assets/buttons/project_video.png" width="350">
 
 </a>
 
-</p>
+### 📽️ Project Video
+
+Overview of Parivartan, including the problem statement, solution, system architecture, features, and expected impact.
+
+</td>
+
+<td align="center" width="50%">
+
+<a href="">
+
+<img src="./assets/buttons/demo.png" width="350">
+
+</a>
+
+### 🎬 Demo Video
+
+Watch the complete demonstration of Parivartan, showcasing AI-powered waste identification, recycler connectivity, scheduled collections, rewards system, community engagement, and admin monitoring.
+
+</td>
+
+</tr>
+</table>
+
 
 ### Android Application
 
@@ -679,7 +698,7 @@ Access the Parivartan web platform for administration, monitoring, and recycler 
 
 <p align="center">
 
-<a href="YOUR_GITHUB_REPOSITORY_LINK">
+<a href="https://github.com/ShraddhaPawar05/Parivartan">
 
 <img src="./assets/buttons/gitrepo.png" width="250">
 
