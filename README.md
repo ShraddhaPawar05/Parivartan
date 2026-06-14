@@ -459,17 +459,17 @@ Graphical representation of survey results, user ratings, and community acceptan
 <td align="center">🌐 Frontend (Web)</td>
 
 <td>
-HTML • CSS • JavaScript
+HTML • CSS • JavaScript 
 </td>
 
 </tr>
 
 <tr>
 
-<td align="center">📱 Mobile Application</td>
+<td align="center">📱 Mobile Application/Web Application</td>
 
 <td>
-React Native
+React Navtive • React.js 
 </td>
 
 </tr>
@@ -479,7 +479,7 @@ React Native
 <td align="center">⚙️ Backend</td>
 
 <td>
-Node.js • Express.js
+Node.js • Express.js • React Vite
 </td>
 
 </tr>
@@ -570,3 +570,137 @@ Firebase Hosting • Google Cloud
 ✅ Secure Authentication & User Management
 
 ✅ Fast Deployment & Hosting
+
+---
+
+# 🎥 Project Demonstration
+
+<p align="center">
+
+<a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUpK">
+
+<img src="./assets/buttons/demo.png" width="250">
+
+</a>
+
+</p>
+
+### Project Demo Video
+
+Watch the complete demonstration of Parivartan, showcasing AI-powered waste identification, recycler connectivity, scheduled collections, rewards system, community engagement, and admin monitoring.
+
+---
+
+# 📲 Download APK
+
+<p align="center">
+
+<a href="https://drive.google.com/file/d/1F03Q57cgDnVkNFtkjxh26T5YhQ7srzp/view?usp=sharing](https://drive.google.com/file/d/1F03Q57cg-DnVkNFtkjxh26T5YhQ7srzp/view?usp=sharing">
+
+<img src="./assets/buttons/pari_app.jpeg" width="250">
+
+</a>
+
+</p>
+
+### Android Application
+
+Download and experience the Parivartan mobile application.
+
+---
+
+# 🌐 Live Website
+
+<p align="center">
+
+<a href="https://parivartan-3a3db.web.app/">
+
+<img src="./assets/buttons/pari_web.jpeg" width="250">
+
+</a>
+
+</p>
+
+### Web Platform
+
+Access the Parivartan web platform for administration, monitoring, and recycler management.
+
+---
+
+# 💻 GitHub Repository
+
+<p align="center">
+
+<a href="YOUR_GITHUB_REPOSITORY_LINK">
+
+<img src="./assets/buttons/gitrepo.png" width="250">
+
+</a>
+
+</p>
+
+### Source Code
+
+This repository contains the complete source code, project documentation, system architecture, research findings, and implementation details of Parivartan.
+
+The project demonstrates how AI and technology can be leveraged to improve waste segregation, recycling accessibility, and environmental sustainability.
+
+---
+
+# 👨‍💻 Team Aarambha
+
+Parivartan is developed by Team Aarambha, a passionate team dedicated to building impactful and sustainable technology solutions.
+
+Our vision is to create innovative platforms that empower communities, promote environmental responsibility, and contribute towards a cleaner and greener future.
+
+---
+
+# 🤝 Contributors
+
+<table align="center">
+
+<tr>
+
+<td align="center">
+
+<img src="./assets/team/member1.png" height="180" width="180"><br>
+
+### Name
+
+App Developer
+
+</td>
+
+<td align="center">
+
+<img src="./assets/team/member2.png" height="180" width="180"><br>
+
+### Name
+
+Backend Developer
+
+</td>
+
+<td align="center">
+
+<img src="./assets/team/member3.png" height="180" width="180"><br>
+
+### Name
+
+Web Developer
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+# ❤️ Made with Passion by Team Aarambha
+
+### 🌱 Transforming Waste into Opportunity Through Technology
+
+Together, we aim to build a cleaner, greener, and more sustainable future through responsible waste management, recycling, and community participation.
+
+---
