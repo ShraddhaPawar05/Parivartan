@@ -663,9 +663,9 @@ Our vision is to create innovative platforms that empower communities, promote e
 
 <td align="center">
 
-<img src="./assets/team/shraddha.jpeg" height="250" width="180"><br><br>
+<img src="./assets/team/shraddha_new.jpeg" height="250" width="180"><br><br>
 
-### Name
+### Shraddha Pawar
 
 App Developer
 
@@ -673,9 +673,9 @@ App Developer
 
 <td align="center">
 
-<img src="./assets/team/kishori_img.jpeg" height="250" width="180"><br><br>
+<img src="./assets/team/kishori_new.jpeg" height="250" width="180"><br><br>
 
-### Name
+### Kishori Birari
 
 Backend Developer
 
@@ -685,7 +685,7 @@ Backend Developer
 
 <img src="./assets/team/alpana.jpeg" height="250" width="180"><br><br>
 
-### Name
+### Alpana Pardesi
 
 Web Developer
 
