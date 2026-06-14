@@ -286,7 +286,7 @@ The system integrates AI-based waste classification, recycler connectivity, pick
 # 📱 Mobile Application Workflow
 
 <p align="center">
-<img src="./assets/screenshots/workflow_app.png" width="100%">
+<img src="./assets/workflow/workflow_app.png" width="100%">
 </p>
 
 ### Mobile Application Flow
@@ -335,7 +335,7 @@ The system integrates AI-based waste classification, recycler connectivity, pick
 # 💻 Web Platform Workflow
 
 <p align="center">
-<img src="./assets/dashboard/workflow_website.jpeg" width="100%">
+<img src="./assets/workflow/workflow_website.jpeg" width="100%">
 </p>
 
 ### Website Platform Flow
@@ -385,7 +385,7 @@ To validate the effectiveness of Parivartan, we conducted surveys and collected 
 <tr>
 
 <td align="center">
-<img src="./assets/feedback/feedback_form.png" width="500"><br>
+<img src="./assets/feedback/feeback_form.png" width="500"><br>
 
 ### 📝 Community Survey Responses
 
@@ -394,7 +394,7 @@ Real feedback collected from users regarding waste segregation, recycling challe
 </td>
 
 <td align="center">
-<img src="./assets/feedback/feedback_graph.png" width="500"><br>
+<img src="./assets/feedback/feeback_graph.png" width="500"><br>
 
 ### 📊 Visual Feedback Analysis
 
