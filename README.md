@@ -623,39 +623,47 @@ Recognized and selected across 10+ hackathons and innovation programs for its su
 
 # 🎥 Project Demonstration
 
-<table align="center">
+<table align="center" width="100%">
+
 <tr>
 
-<td align="center" width="50%">
+<td align="center" valign="top" width="50%">
 
 <a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUp">
 
-<img src="./assets/buttons/demo.png" height="200" width="350">
+<img src="./assets/buttons/demo.png" height="220">
 
 </a>
+
+<br><br>
 
 ### 📽️ Project Video
 
-Overview of Parivartan, including the problem statement, solution, system architecture, features, and expected impact.
+Overview of Parivartan including the problem statement, solution, system architecture, key features, and project vision.
 
 </td>
 
-<td align="center" width="50%">
+<td align="center" valign="top" width="50%">
 
 <a href="https://drive.google.com/file/d/1TCyHnb3mfvnWh9pn3Wxe_5oVFuAiUL63/view?usp=sharing">
 
-<img src="./assets/buttons/demo1.png" width="350">
+<img src="./assets/buttons/demo1.png" height="220">
 
 </a>
 
+<br><br>
+
 ### 🎬 Demo Video
 
-Watch the complete demonstration of Parivartan, showcasing AI-powered waste identification, recycler connectivity, scheduled collections, rewards system, community engagement, and admin monitoring.
+Complete working demonstration of Parivartan showcasing AI-powered waste identification, recycler connectivity, scheduled collections, rewards system, community engagement, and admin monitoring.
 
 </td>
 
 </tr>
+
 </table>
+
+---
 
 # 📲 Download APK
 
