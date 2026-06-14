@@ -36,7 +36,7 @@ Making cities cleaner, safer, and environmentally sustainable through responsibl
 </td>
 
 <td align="center">
-<img src="./assets/sdg/sdg12.jpeg" width="220"><br>
+<img src="./assets/sdg/sdg12.jpeg" top="1" width="220"><br>
 
 ### SDG 12
 ### Responsible Consumption and Production
