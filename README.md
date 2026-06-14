@@ -675,13 +675,6 @@ Download and experience the Parivartan mobile application.
 
 ---
 
-
-### Android Application
-
-Download and experience the Parivartan mobile application.
-
----
-
 # 🌐 Live Website
 
 <p align="center">
