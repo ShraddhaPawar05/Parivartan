@@ -573,6 +573,58 @@ Firebase Hosting • Google Cloud
 
 ---
 
+# 🏆 Achievements & Recognition
+
+Parivartan has been recognized across multiple innovation and technology platforms for its potential impact on sustainable waste management and environmental conservation.
+
+<table align="center">
+
+<tr>
+
+<td align="center" width="50%">
+
+🏅
+
+### DIPEX 2026 Finalist
+
+Selected among innovative engineering projects at DIPEX 2026 for addressing real-world waste management challenges through AI and technology.
+
+</td>
+
+<td align="center" width="50%">
+
+🚀
+
+### 10+ Hackathon Selections
+
+Recognized and selected across 10+ hackathons and innovation programs for its sustainable and community-driven waste management approach.
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+### 📌 Project Milestones
+
+✅ DIPEX 2026 Final Round Selection
+
+✅ 10+ Hackathon Selections
+
+✅ AI-Powered Waste Classification System
+
+✅ Community-Driven Recycling Platform
+
+✅ Recycler Connectivity & Collection Scheduling
+
+✅ Reward-Based Sustainable Waste Management
+
+✅ Supporting UN Sustainable Development Goals (SDG 11, SDG 12 & SDG 13)
+
+---
+
 # 🎥 Project Demonstration
 
 <p align="center">
