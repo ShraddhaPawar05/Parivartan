@@ -623,18 +623,6 @@ Recognized and selected across 10+ hackathons and innovation programs for its su
 
 # 🎥 Project Demonstration
 
-<p align="center">
-
-<a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUpK">
-
-<img src="./assets/buttons/demo.png" width="500">
-
-</a>
-
-</p>
-
-# 🎥 Project Demonstration
-
 <table align="center">
 <tr>
 
@@ -642,7 +630,7 @@ Recognized and selected across 10+ hackathons and innovation programs for its su
 
 <a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUp">
 
-<img src="./assets/buttons/project_video.png" width="350">
+<img src="./assets/buttons/demo.png" width="350">
 
 </a>
 
@@ -656,7 +644,7 @@ Overview of Parivartan, including the problem statement, solution, system archit
 
 <a href="">
 
-<img src="./assets/buttons/demo.png" width="350">
+<img src="./assets/buttons/demo1.jpeg" width="350">
 
 </a>
 
@@ -668,6 +656,24 @@ Watch the complete demonstration of Parivartan, showcasing AI-powered waste iden
 
 </tr>
 </table>
+
+# 📲 Download APK
+
+<p align="center">
+
+<a href="[![APK Downloads](https://img.shields.io/github/downloads/ShraddhaPawar05/Parivartan/total?style=for-the-badge&color=brightgreen&logo=android&label=APK+Downloads)](https://github.com/ShraddhaPawar05/Parivartan/releases/download/v1.0.0/app-release.apk)">
+
+<img src="./assets/buttons/pari_app.jpeg" width="250">
+
+</a>
+
+</p>
+
+### Android Application
+
+Download and experience the Parivartan mobile application.
+
+---
 
 
 ### Android Application
