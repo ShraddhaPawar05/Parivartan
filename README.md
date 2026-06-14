@@ -394,7 +394,7 @@ Real feedback collected from users regarding waste segregation, recycling challe
 </td>
 
 <td align="center">
-<img src="./assets/feedback/feeback_graph.png" height="250" width="500"><br>
+<img src="./assets/feedback/feeback_graph.png" height="200" width="500"><br>
 
 ### 📊 Visual Feedback Analysis
 
