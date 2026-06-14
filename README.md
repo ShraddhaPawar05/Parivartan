@@ -385,7 +385,7 @@ To validate the effectiveness of Parivartan, we conducted surveys and collected 
 <tr>
 
 <td align="center">
-<img src="./assets/feedback/feeback_form.png" height= "250" width="500"><br>
+<img src="./assets/feedback/feeback_form.png" height= "275" width="500"><br>
 
 ### 📝 Community Survey Responses
 
