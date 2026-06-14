@@ -283,34 +283,302 @@ The system integrates AI-based waste classification, recycler connectivity, pick
 
 # ⚙️ Workflow
 
+# 📱 Mobile Application Workflow
+
 <p align="center">
-<img src="./assets/workflow/workflow_app.png" width="100%">
+<img src="./assets/screenshots/workflow_app.png" width="100%">
 </p>
 
-## How Parivartan Works
+### Mobile Application Flow
 
-### Step 1
-📸 User uploads waste image through the mobile app or website.
+#### 🔐 Authentication
+- User Registration
+- Login
+- Profile Management
 
-### Step 2
-🤖 AI analyzes the image and identifies the waste category.
+#### 📸 Waste Detection
+- Upload Waste Image
+- Camera-Based Detection
+- AI Classification
 
-### Step 3
-♻️ System matches the waste with suitable nearby verified recyclers.
+#### ♻️ Recycler Matching
+- View Nearby Recyclers
+- Recycler Details
+- Recycler Selection
 
-### Step 4
-📅 User schedules a collection request.
+#### 📅 Pickup Scheduling
+- Create Pickup Request
+- Select Date & Time
+- Confirm Collection
 
-### Step 5
-🚚 Recycler accepts and processes the pickup request.
+#### 🎁 Rewards System
+- Earn EcoPoints
+- View Reward History
+- Redeem Rewards
 
-### Step 6
-🎁 User receives EcoPoints for responsible waste disposal.
+#### 🌱 Community Platform
+- Create Posts
+- Like & Comment
+- Awareness Campaigns
 
-### Step 7
-📊 Environmental impact metrics are updated automatically.
+#### 💬 AI Assistant
+- Waste Segregation Guidance
+- Recycling Recommendations
+- User Support
 
-### Step 8
-🛡️ Admin monitors the complete process through the dashboard.
+#### 📊 Impact Tracking
+- Waste Recycled
+- Environmental Contribution
+- Sustainability Metrics
+
+
+# 💻 Web Platform Workflow
+
+<p align="center">
+<img src="./assets/dashboard/workflow_website.jpeg" width="100%">
+</p>
+
+### Website Platform Flow
+
+#### ♻️ Recycler Dashboard
+- View Collection Requests
+- Accept or Reject Requests
+- Track Collection Activities
+
+#### 📋 Request Management
+- Monitor Active Requests
+- View Collection History
+- Update Request Status
+
+#### 📊 Analytics Dashboard
+- Waste Collection Statistics
+- Environmental Impact Metrics
+- User Engagement Insights
+
+#### 🌍 Community Moderation
+- Review Community Posts
+- Remove Inappropriate Content
+- Monitor Platform Activities
+
+#### ✅ Recycler Verification
+- Verify New Partners
+- Approve Recycling Organizations
+- Manage Recycler Profiles
+
+#### 🛡️ Admin Controls
+- User Management
+- Reward Management
+- Platform Monitoring
+
+#### 🤖 AI Integration
+- Waste Classification Monitoring
+- Chatbot Assistance
+- Analytics Support
 
 ---
+
+# 📈 Feedback & Impact Analysis
+
+To validate the effectiveness of Parivartan, we conducted surveys and collected feedback from students, households, environmental enthusiasts, and community members.
+
+<table>
+<tr>
+
+<td align="center">
+<img src="./assets/feedback/feedback_form.png" width="500"><br>
+
+### 📝 Community Survey Responses
+
+Real feedback collected from users regarding waste segregation, recycling challenges, and platform usability.
+
+</td>
+
+<td align="center">
+<img src="./assets/feedback/feedback_graph.png" width="500"><br>
+
+### 📊 Visual Feedback Analysis
+
+Graphical representation of survey results, user ratings, and community acceptance of the platform.
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 📌 Key Insights
+
+✅ Majority of respondents agreed that improper waste segregation is a major issue.
+
+✅ Users showed strong interest in AI-based waste identification.
+
+✅ Citizens preferred scheduled waste collection over individual pickups.
+
+✅ Reward-based recycling received highly positive responses.
+
+✅ Most participants believed technology can improve waste management efficiency.
+
+✅ Strong support was observed for connecting households directly with verified recyclers.
+
+---
+
+## 🌍 Expected Environmental Impact
+
+♻️ Increased recycling participation
+
+🌱 Reduced landfill waste
+
+🔥 Reduction in waste burning practices
+
+🏙️ Cleaner urban, rural, and semi-urban communities
+
+🌎 Improved sustainability and resource utilization
+
+---
+
+# 🛠️ Technology Stack
+
+<table>
+
+<tr>
+
+<td align="center" width="25%">
+
+<img src="./assets/techstack/html-css-js.png" width="90"><br>
+
+### Frontend (Web)
+
+HTML<br>
+CSS<br>
+JavaScript
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="./assets/techstack/react-native.png" width="90"><br>
+
+### Mobile App
+
+React Native
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="./assets/techstack/nodejs.png" width="90"><br>
+
+### Backend
+
+Node.js<br>
+Express.js
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="./assets/techstack/firestore.png" width="90"><br>
+
+### Database
+
+Firebase Firestore
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="./assets/techstack/firebase-auth.png" width="90"><br>
+
+### Authentication
+
+Firebase Authentication
+
+</td>
+
+<td align="center">
+
+<img src="./assets/techstack/gemini.png" width="90"><br>
+
+### AI Service
+
+Gemini API
+
+</td>
+
+<td align="center">
+
+<img src="./assets/techstack/cloudinary.png" width="90"><br>
+
+### Storage
+
+Cloudinary
+
+</td>
+
+<td align="center">
+
+<img src="./assets/techstack/fcm.png" width="90"><br>
+
+### Notifications
+
+Firebase Cloud Messaging
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="4" align="center">
+
+<img src="./assets/techstack/firebase-hosting.png" width="100"><br>
+
+### Hosting & Cloud
+
+Firebase Hosting • Google Cloud
+
+</td>
+
+</tr>
+
+</table>
+
+---
+
+## 🔧 Additional Tools
+
+<table>
+<tr>
+
+<td align="center">
+
+<img src="./assets/techstack/git.png" width="60"><br>
+
+Git & GitHub
+
+</td>
+
+<td align="center">
+
+<img src="./assets/techstack/vscode.png" width="60"><br>
+
+VS Code
+
+</td>
+
+<td align="center">
+
+<img src="./assets/techstack/figma.png" width="60"><br>
+
+Figma
+
+</td>
+
+</tr>
+</table>
+
