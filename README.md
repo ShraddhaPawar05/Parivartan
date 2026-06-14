@@ -644,7 +644,7 @@ Overview of Parivartan, including the problem statement, solution, system archit
 
 <a href="https://drive.google.com/file/d/1TCyHnb3mfvnWh9pn3Wxe_5oVFuAiUL63/view?usp=sharing">
 
-<img src="./assets/buttons/demo1.jpeg" height="250" width="350">
+<img src="./assets/buttons/demo1.jpeg" height="400" width="350">
 
 </a>
 
