@@ -22,33 +22,40 @@ Our mission is to reduce improper waste disposal, increase recycling efficiency,
 
 Parivartan directly contributes towards the following United Nations Sustainable Development Goals.
 
-<table align="center">
+<table align="center" width="100%">
+
 <tr>
 
-<td align="center">
-<img src="./assets/sdg/sdg11.jpeg" width="220"><br>
+<td align="center" valign="top" width="33%">
+
+<img src="./assets/sdg/sdg11.jpeg" height="220"><br><br>
 
 ### SDG 11
+
 ### Sustainable Cities and Communities
 
 Making cities cleaner, safer, and environmentally sustainable through responsible waste management.
 
 </td>
 
-<td align="center">
-<img src="./assets/sdg/sdg12.jpeg" top="1" width="220"><br>
+<td align="center" valign="top" width="33%">
+
+<img src="./assets/sdg/sdg12.jpeg" height="220"><br><br>
 
 ### SDG 12
+
 ### Responsible Consumption and Production
 
 Promoting waste segregation, recycling, and efficient utilization of resources.
 
 </td>
 
-<td align="center">
-<img src="./assets/sdg/sdg13.jpeg" width="220"><br>
+<td align="center" valign="top" width="33%">
+
+<img src="./assets/sdg/sdg13.jpeg" height="220"><br><br>
 
 ### SDG 13
+
 ### Climate Action
 
 Reducing environmental pollution and carbon emissions through sustainable waste practices.
@@ -56,10 +63,10 @@ Reducing environmental pollution and carbon emissions through sustainable waste 
 </td>
 
 </tr>
+
 </table>
 
 ---
-
 # ❗ Problem Statement
 
 Improper waste segregation remains one of the major environmental challenges across rural, urban, and semi-urban areas.
