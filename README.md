@@ -445,7 +445,7 @@ Graphical representation of survey results, user ratings, and community acceptan
 
 <td align="center" width="25%">
 
-<img src="./assets/techstack/html-css-js.png" width="90"><br>
+<img src="./assets/techstack/frontend.png" width="90"><br>
 
 ### Frontend (Web)
 
@@ -457,7 +457,7 @@ JavaScript
 
 <td align="center" width="25%">
 
-<img src="./assets/techstack/react-native.png" width="90"><br>
+<img src="./assets/techstack/react_native.png" width="90"><br>
 
 ### Mobile App
 
@@ -467,7 +467,7 @@ React Native
 
 <td align="center" width="25%">
 
-<img src="./assets/techstack/nodejs.png" width="90"><br>
+<img src="./assets/techstack/node_express.png" width="90"><br>
 
 ### Backend
 
@@ -478,7 +478,7 @@ Express.js
 
 <td align="center" width="25%">
 
-<img src="./assets/techstack/firestore.png" width="90"><br>
+<img src="./assets/techstack/firebase_firestore.png" width="90"><br>
 
 ### Database
 
@@ -492,7 +492,7 @@ Firebase Firestore
 
 <td align="center">
 
-<img src="./assets/techstack/firebase-auth.png" width="90"><br>
+<img src="./assets/techstack/firebase_auth.png" width="90"><br>
 
 ### Authentication
 
@@ -502,7 +502,7 @@ Firebase Authentication
 
 <td align="center">
 
-<img src="./assets/techstack/gemini.png" width="90"><br>
+<img src="./assets/techstack/gemini.webp" width="90"><br>
 
 ### AI Service
 
@@ -512,7 +512,7 @@ Gemini API
 
 <td align="center">
 
-<img src="./assets/techstack/cloudinary.png" width="90"><br>
+<img src="./assets/techstack/storage.jpg" width="90"><br>
 
 ### Storage
 
@@ -522,7 +522,7 @@ Cloudinary
 
 <td align="center">
 
-<img src="./assets/techstack/fcm.png" width="90"><br>
+<img src="./assets/techstack/cloud_msg.png" width="90"><br>
 
 ### Notifications
 
@@ -536,7 +536,7 @@ Firebase Cloud Messaging
 
 <td colspan="4" align="center">
 
-<img src="./assets/techstack/firebase-hosting.png" width="100"><br>
+<img src="./assets/techstack/hosting.jpg" width="100"><br>
 
 ### Hosting & Cloud
 
@@ -557,7 +557,7 @@ Firebase Hosting • Google Cloud
 
 <td align="center">
 
-<img src="./assets/techstack/git.png" width="60"><br>
+<img src="./assets/techstack/github.png" width="60"><br>
 
 Git & GitHub
 
