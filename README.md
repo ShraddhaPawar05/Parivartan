@@ -661,7 +661,7 @@ Watch the complete demonstration of Parivartan, showcasing AI-powered waste iden
 
 <p align="center">
 
-<a href="[![APK Downloads](https://img.shields.io/github/downloads/ShraddhaPawar05/Parivartan/total?style=for-the-badge&color=brightgreen&logo=android&label=APK+Downloads)](https://github.com/ShraddhaPawar05/Parivartan/releases/download/v1.0.0/app-release.apk)">
+<a href="https://github.com/ShraddhaPawar05/Parivartan/releases/download/v1.0.0/app-release.apk">
 
 <img src="./assets/buttons/pari_app.jpeg" width="250">
 
