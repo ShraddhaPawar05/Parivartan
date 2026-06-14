@@ -630,7 +630,7 @@ Recognized and selected across 10+ hackathons and innovation programs for its su
 
 <a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUp">
 
-<img src="./assets/buttons/demo.png" width="350">
+<img src="./assets/buttons/demo.png" height="200" width="350">
 
 </a>
 
