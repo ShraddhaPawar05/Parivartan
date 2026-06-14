@@ -439,109 +439,107 @@ Graphical representation of survey results, user ratings, and community acceptan
 
 # 🛠️ Technology Stack
 
+<p align="center">
+<img src="./assets/techstack/tech-stack.png" width="100%">
+</p>
+
+## Technology Overview
+
 <table>
 
 <tr>
 
-<td align="center" width="25%">
+<th align="center">Layer</th>
+<th align="center">Technologies Used</th>
 
-<img src="./assets/techstack/frontend.png" height="80" width="90"><br>
+</tr>
 
-### Frontend (Web)
+<tr>
 
-HTML<br>
-CSS<br>
-JavaScript
+<td align="center">🌐 Frontend (Web)</td>
 
+<td>
+HTML • CSS • JavaScript
 </td>
 
-<td align="center" width="25%">
+</tr>
 
-<img src="./assets/techstack/react_native.png" height="80" width="90"><br>
+<tr>
 
-### Mobile App
+<td align="center">📱 Mobile Application</td>
 
+<td>
 React Native
-
 </td>
 
-<td align="center" width="25%">
+</tr>
 
-<img src="./assets/techstack/node_express.png" height="80" width="90"><br>
+<tr>
 
-### Backend
+<td align="center">⚙️ Backend</td>
 
-Node.js<br>
-Express.js
-
+<td>
+Node.js • Express.js
 </td>
 
-<td align="center" width="25%">
+</tr>
 
-<img src="./assets/techstack/firebase_firestore.png" height="80" width="90"><br>
+<tr>
 
-### Database
+<td align="center">🗄️ Database</td>
 
+<td>
 Firebase Firestore
-
 </td>
 
 </tr>
 
 <tr>
 
-<td align="center">
+<td align="center">🔐 Authentication</td>
 
-<img src="./assets/techstack/firebase_auth.png" height="80" width="90"><br>
-
-### Authentication
-
+<td>
 Firebase Authentication
-
-</td>
-
-<td align="center">
-
-<img src="./assets/techstack/gemini.webp" height="80" width="90"><br>
-
-### AI Service
-
-Gemini API
-
-</td>
-
-<td align="center">
-
-<img src="./assets/techstack/storage.jpg" height="80" width="90"><br>
-
-### Storage
-
-Cloudinary
-
-</td>
-
-<td align="center">
-
-<img src="./assets/techstack/cloud_msg.png" height="80" width="90"><br>
-
-### Notifications
-
-Firebase Cloud Messaging
-
 </td>
 
 </tr>
 
 <tr>
 
-<td colspan="4" align="center">
+<td align="center">🤖 AI Service</td>
 
-<img src="./assets/techstack/hosting.jpg"  height="80" width="100"><br>
+<td>
+Gemini API
+</td>
 
-### Hosting & Cloud
+</tr>
 
+<tr>
+
+<td align="center">☁️ Storage</td>
+
+<td>
+Cloudinary
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">🔔 Notifications</td>
+
+<td>
+Firebase Cloud Messaging (FCM)
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">🚀 Hosting</td>
+
+<td>
 Firebase Hosting • Google Cloud
-
 </td>
 
 </tr>
@@ -552,33 +550,23 @@ Firebase Hosting • Google Cloud
 
 ## 🔧 Additional Tools
 
-<table>
-<tr>
+- Git & GitHub (Version Control)
+- VS Code (Development Environment)
+- Figma (UI/UX Design)
+- Canva (Presentation & Visual Assets)
 
-<td align="center">
+---
 
-<img src="./assets/techstack/github.png" height="80" width="60"><br>
+### Why This Stack?
 
-Git & GitHub
+✅ Scalable Cloud Infrastructure
 
-</td>
+✅ Real-Time Database Synchronization
 
-<td align="center">
+✅ AI-Powered Waste Identification
 
-<img src="./assets/techstack/vscode.png" height="80" width="60"><br>
+✅ Cross-Platform Mobile Experience
 
-VS Code
+✅ Secure Authentication & User Management
 
-</td>
-
-<td align="center">
-
-<img src="./assets/techstack/figma.png" height="80" width="60"><br>
-
-Figma
-
-</td>
-
-</tr>
-</table>
-
+✅ Fast Deployment & Hosting
