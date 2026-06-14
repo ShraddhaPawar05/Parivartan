@@ -663,7 +663,7 @@ Our vision is to create innovative platforms that empower communities, promote e
 
 <td align="center">
 
-<img src="./assets/team/shraddha.jpeg" height="180" width="180"><br>
+<img src="./assets/team/shraddha.jpeg" height="250" width="180"><br><br>
 
 ### Name
 
@@ -673,7 +673,7 @@ App Developer
 
 <td align="center">
 
-<img src="./assets/team/kishori_img.jpeg" height="180" width="180"><br>
+<img src="./assets/team/kishori_img.jpeg" height="250" width="180"><br><br>
 
 ### Name
 
@@ -683,7 +683,7 @@ Backend Developer
 
 <td align="center">
 
-<img src="./assets/team/alpana.jpeg" height="180" width="180"><br>
+<img src="./assets/team/alpana.jpeg" height="250" width="180"><br><br>
 
 ### Name
 
