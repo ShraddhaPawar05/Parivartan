@@ -579,7 +579,7 @@ Firebase Hosting • Google Cloud
 
 <a href="https://youtu.be/7aOfjc4jR-c?si=1y50Uaq7y9BSiUpK">
 
-<img src="./assets/buttons/demo.png" width="250">
+<img src="./assets/buttons/demo.png" width="500">
 
 </a>
 
@@ -663,7 +663,7 @@ Our vision is to create innovative platforms that empower communities, promote e
 
 <td align="center">
 
-<img src="./assets/team/member1.png" height="180" width="180"><br>
+<img src="./assets/team/shraddha.jpeg" height="180" width="180"><br>
 
 ### Name
 
@@ -673,7 +673,7 @@ App Developer
 
 <td align="center">
 
-<img src="./assets/team/member2.png" height="180" width="180"><br>
+<img src="./assets/team/kishori_img.jpeg" height="180" width="180"><br>
 
 ### Name
 
@@ -683,7 +683,7 @@ Backend Developer
 
 <td align="center">
 
-<img src="./assets/team/member3.png" height="180" width="180"><br>
+<img src="./assets/team/alpana.jpeg" height="180" width="180"><br>
 
 ### Name
 
