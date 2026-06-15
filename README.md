@@ -489,6 +489,16 @@ Node.js • Express.js
 
 <tr>
 
+<td align="center">🌐 AI Model</td>
+
+<td>
+TensorFlow-Lite(ON Device)
+</td>
+
+</tr>
+
+<tr>
+
 <td align="center">🗄️ Database</td>
 
 <td>
