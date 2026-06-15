@@ -472,7 +472,7 @@ HTML • CSS • JavaScript
 <td align="center">📱 Mobile Application/Web Application</td>
 
 <td>
-React Native • React.js 
+React Native • React.js • React Vite
 </td>
 
 </tr>
@@ -482,7 +482,7 @@ React Native • React.js
 <td align="center">⚙️ Backend</td>
 
 <td>
-Node.js • Express.js • React Vite
+Node.js • Express.js
 </td>
 
 </tr>
@@ -784,3 +784,21 @@ Web Developer
 Together, we aim to build a cleaner, greener, and more sustainable future through responsible waste management, recycling, and community participation.
 
 ---
+
+# References
+
+1) Waste Classification using Convolutional Neural Networks
+🔗 https://ieeexplore.ieee.org/document/9008796
+
+2) AI-Based Smart Waste Management for Sustainable Cities 
+🔗 https://www.mdpi.com/1424-8220/21/13/4559
+
+3) TrashNet Dataset
+🔗 https://github.com/garythung/trashnet
+
+4) TensorFlow – Image Classification Guide
+🔗 https://www.tensorflow.org/tutorials/images/classification
+
+5) UN Sustainable Development Goal 12 – Responsible Consumption & Production
+🔗 https://sdgs.un.org/goals/goal12
+
