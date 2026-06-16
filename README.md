@@ -690,7 +690,12 @@ Complete working demonstration of Parivartan showcasing AI-powered waste identif
 
 <img src="./assets/buttons/pari_app.jpeg" width="250">
 
-<p>Firebase Hosting GCP <a href="https://appdistribution.firebase.google.com/i/416e09e8294f523b"></p>
+<p>
+    Firebase Hosting GCP
+    <a href="https://appdistribution.firebase.google.com/i/416e09e8294f523b">
+        Open App
+    </a>
+</p>
 
 
 [![APK Downloads](https://img.shields.io/github/downloads/ShraddhaPawar05/Parivartan/total?style=for-the-badge&color=brightgreen&logo=android&label=APK+Downloads)](https://github.com/ShraddhaPawar05/Parivartan/releases/download/v1.0.0/app-release.apk)
