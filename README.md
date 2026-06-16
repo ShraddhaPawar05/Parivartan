@@ -706,21 +706,39 @@ Download and experience the Parivartan mobile application.
 
 ---
 
-# 🌐 Live Website
+## 🌐 Live Website
 
-<p align="center">
+<table align="center">
+<tr>
+
+<td align="center" width="50%">
 
 <a href="https://parivartan-3a3db.web.app/">
-
-<img src="./assets/buttons/pari_web.jpeg" width="250">
-
+    <img src="./assets/buttons/pari_web.jpeg" width="250">
 </a>
 
-</p>
+<br><br>
 
 ### Web Platform
 
 Access the Parivartan web platform for administration, monitoring, and recycler management.
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="./assets/feedback/web_users.jpeg" width="350">
+
+<br><br>
+
+### Active Users
+
+Real-time active user statistics and platform engagement monitoring.
+
+</td>
+
+</tr>
+</table>
 
 ---
 
